@@ -87,7 +87,7 @@ const animatedItems = document.querySelectorAll('.animate');
 const heroItems = document.querySelectorAll('#hero .animate');
 
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   heroItems.forEach(item => {
     item.classList.add('show');
   });
