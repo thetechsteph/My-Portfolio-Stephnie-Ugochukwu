@@ -63,6 +63,7 @@
 
 html {
     transition: background 0.4s ease, color 0.4s ease;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -72,7 +73,6 @@ body{
     background: var(--bg-gradient);
     line-height: 1.6;
     min-height: 100vh;
-    scroll-behavior: smooth;
     font-weight: 400;
 }
 
@@ -232,6 +232,8 @@ h2{
     
 }
 
+
+
 .hero-content .cta{
     display: inline-block;
     padding: 0.5rem;
@@ -323,7 +325,7 @@ h2{
 .meter-fill{
     height: 100%;
     width: 0;
-    background: #4caf50;
+    background: #846dce;
     transition: width 2s ease-in-out;
 }
 
@@ -350,10 +352,9 @@ h2{
   overflow: hidden;
   text-align: center;
   padding: 15px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
   margin: 0.5rem;
   background: var(--project-bg);
-  
  
 }
 
@@ -435,12 +436,13 @@ form{
     gap: 1rem;
     max-width: 500px;
     border-radius: 1rem;
-    border: 2px solid var(--form-border);
+    box-shadow: var(--project-shadow);
 }
 
 input{
     font-size: 1rem;
     width: 100%;
+
 }
 
 .form-group{
@@ -454,7 +456,7 @@ input{
     border: none ;
     background: #A89FFF;
     border-radius: 8px;
-    color: var(--input-bg);
+    color: var(--text-color);
     padding-left: 1rem;
 }
 
@@ -486,7 +488,55 @@ footer{
 
 
 
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate {
+  opacity: 0;
+}
+
+.animate.show {
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.fade-up.show { animation-name: fadeUp; }
+.fade-in.show { animation-name: fadeIn; }
+.scale-up.show { animation-name: scaleUp; }
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+.cta {
+  animation: shake 0.5s ease-in-out;
+  animation-delay: 0.8s;
+}
+
+.cta:hover {
+  animation: shake 0.5s ease-in-out;
+}
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.4s; }
 @media (min-width: 768px) {
     .content {
         flex-direction: row;

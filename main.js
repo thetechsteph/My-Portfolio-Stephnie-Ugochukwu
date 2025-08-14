@@ -59,7 +59,15 @@ if (html.getAttribute("data-theme") === "dark") {
   toggleBtn.innerHTML = sunSVG; 
 }
 
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
+if (prefersDarkScheme.matches) {
+  document.documentElement.setAttribute("data-theme", "dark");
+  toggleBtn.innerHTML = moonSVG;
+} else {
+  document.documentElement.setAttribute("data-theme", "light");
+  toggleBtn.innerHTML = sunSVG;
+}
 
 // Theme toggle
 toggleBtn.addEventListener("click", () => {
@@ -72,3 +80,46 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.innerHTML = moonSVG;
   }
 });
+
+
+
+const animatedItems = document.querySelectorAll('.animate');
+const heroItems = document.querySelectorAll('#hero .animate');
+
+
+window.addEventListener('load', () => {
+  heroItems.forEach(item => {
+    item.classList.add('show');
+  });
+});
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else{
+      entry.target.classList.remove('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+
+animatedItems.forEach(item => {
+  if (!item.closest('#hero')) {
+    observer.observe(item);
+  }
+});
+
+const meters = document.querySelectorAll('.meter-fill');
+
+const skillsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const percent = entry.target.getAttribute('data-percent');
+      entry.target.style.width = percent + '%';
+    } 
+  });
+}, { threshold: 0.5 });
+
+meters.forEach(meter => skillsObserver.observe(meter));
