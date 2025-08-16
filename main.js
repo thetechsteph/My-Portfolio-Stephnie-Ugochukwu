@@ -52,22 +52,19 @@ const moonSVG = `
 </svg>
 `;
 
-
-if (html.getAttribute("data-theme") === "dark") {
-  toggleBtn.innerHTML = moonSVG;
-} else {
-  toggleBtn.innerHTML = sunSVG; 
-}
-
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 if (prefersDarkScheme.matches) {
-  document.documentElement.setAttribute("data-theme", "dark");
+  html.setAttribute("data-theme", "dark");
   toggleBtn.innerHTML = moonSVG;
 } else {
-  document.documentElement.setAttribute("data-theme", "light");
+  html.setAttribute("data-theme", "light");
   toggleBtn.innerHTML = sunSVG;
 }
+
+
+
+
 
 // Theme toggle
 toggleBtn.addEventListener("click", () => {
@@ -98,8 +95,6 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
-    } else{
-      entry.target.classList.remove('show');
     }
   });
 }, { threshold: 0.2 });
@@ -123,3 +118,19 @@ const skillsObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 meters.forEach(meter => skillsObserver.observe(meter));
+
+
+
+
+
+
+const form = document.querySelector("form");
+
+
+form.addEventListener("submit", function (e) {
+  
+    setTimeout(() => {
+        
+        form.reset();
+    }, 700 ); 
+});
