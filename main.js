@@ -132,5 +132,5 @@ form.addEventListener("submit", function (e) {
     setTimeout(() => {
         
         form.reset();
-    }, 700 ); 
+    }, 1000); 
 });
