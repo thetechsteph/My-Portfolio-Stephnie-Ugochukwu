@@ -15,8 +15,7 @@
   --project-bg: #0f0f1f; 
   --skill-shadow: 0 4px 8px rgba(168, 155, 242, 0.6);
   --button-bg-gradient: linear-gradient(#A89BF2, #4A1985);
-  --form-bg: #E2DCF4;
-  --input-bg: #A89FFF;
+  --input-bg: #E2DCF4;
   --form-border: white;
   --avatar-border: white;
   --social-border: white;
@@ -45,7 +44,7 @@
   --skill-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   --button-bg-gradient: linear-gradient(#d1c4ff, #8e7cc3);
   --form-bg: #ffffff;
-  --input-bg: #e0d7ff;
+  --input-bg: #E2DCF4;
   --form-border: #000;
   --avatar-border: #000;
   --social-border: #000;
@@ -520,7 +519,7 @@ input{
     height: 2.5rem;
     margin-left: 1rem;
     border: none ;
-    background: #E2DCF4;
+    background: var(--input-bg);
     border-radius: 8px;
     color: #000;
     padding-left: 1rem;
@@ -530,7 +529,7 @@ input{
 .message-group textarea{
     border: none;
     width: 100%;
-    background: #E2DCF4;
+    background: var(--input-bg);
     border-radius: 3px;
     margin-top: 0.5rem;
     font-family: 'Poppins';
@@ -605,6 +604,7 @@ footer{
 .delay-2 { animation-delay: 0.2s; }
 .delay-3 { animation-delay: 0.4s; }
 @media (min-width: 768px) {
+    
     .content {
         flex-direction: row;
         text-align: left;
@@ -612,6 +612,9 @@ footer{
         margin: 1rem;
         align-items: center;
     }
+    .content h1{ font-size: 3rem;}
+    .content h2{ font-size: 2rem;}
+    .content p{ font-size: 1.2rem;}
     
     #hero{
         margin-top: 10%;
@@ -641,22 +644,30 @@ footer{
         height: auto;
     }
   .navbar {
-    position: static;   /* not fixed on desktop */
+    position: static;   
     display: flex !important;
     flex-direction: row;
     height: auto;
     width: auto;
-    gap: 1rem;
+    gap: 2rem;
     box-shadow: none;
     padding: 0;
     background: none;
+    font-size: 1rem;
   }
     #hamburger{
     display: none;
   }
   
+  .projects{
+      margin-top: 3rem;
+  }
+  
   .project img{
       height: 10rem;
+  }
+  .project{
+      height: auto;
   }
   
   #contact {
@@ -673,9 +684,16 @@ footer{
 #contact > div {
     flex: 1;
   }
-   h1 { font-size: 4rem; }
-  h2 { font-size: 2.5rem; }
-  p  { font-size: 1.1rem; }
+  h1 { font-size: 4rem; }
+  h2 { font-size: 3rem; }
+    p { font-size: 1.3rem; }
+  .skill i { font-size: 4rem; }
+  .project h3 { font-size: 1.5rem; }
+  .project p { font-size: 1.2rem; }
+  input, textarea, button { font-size: 1.3rem; }
+  form{
+      font-size: 1.3rem;
+  }
 
 }
 
