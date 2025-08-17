@@ -616,9 +616,7 @@ footer{
     .content h2{ font-size: 2rem;}
     .content p{ font-size: 1.2rem;}
     
-    #hero{
-        margin-top: 10%;
-    }
+
     .skill{
     padding: 2rem;
     margin: 2rem;
@@ -653,7 +651,11 @@ footer{
     box-shadow: none;
     padding: 0;
     background: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .logo{
+      font-size: 3rem;
   }
     #hamburger{
     display: none;
@@ -690,10 +692,15 @@ footer{
   .skill i { font-size: 4rem; }
   .project h3 { font-size: 1.5rem; }
   .project p { font-size: 1.2rem; }
-  input, textarea, button { font-size: 1.3rem; }
+  input, textarea, button{ font-size: 1.3rem; }
   form{
       font-size: 1.3rem;
   }
+ a{ 
+     font-size: 1.5rem;
+     width: rem;
+    
+ }
 
 }
 
