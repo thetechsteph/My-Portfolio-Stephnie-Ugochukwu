@@ -1,237 +1,241 @@
 <!DOCTYPE html>
-<html lang="en" data-theme ="">
+<html lang="en" data-theme="">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Stephnie Ugochukwu - 15-year-old frontend web developer building clean, responsive, and user-friendly websites.">
-  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Primary Meta -->
+  <title>Stephnie Ugochukwu | Frontend Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Stephnie Ugochukwu, a 15-year-old frontend developer building clean, responsive, and user-friendly websites using HTML, CSS, JavaScript, and React.">
+  <meta name="keywords" content="Frontend Developer, Web Developer, HTML, CSS, JavaScript, React, Portfolio, Nigeria, Junior Developer">
+  <meta name="author" content="Stephnie Ugochukwu">
 
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Open Graph (Social Media Preview) -->
+  <meta property="og:title" content="Stephnie Ugochukwu | Frontend Web Developer">
+  <meta property="og:description" content="Explore my projects, skills, and passion for building user-friendly websites.">
+  <meta property="og:image" content="Assets/Avatar.jpeg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourusername.github.io/your-portfolio/">
 
-  <title>Stephnie Ugochukwu | Portfolio</title>
-  
-  <!-- HTML -->
-  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Stephnie Ugochukwu | Frontend Web Developer">
+  <meta name="twitter:description" content="Frontend developer portfolio with projects in HTML, CSS, JavaScript, and React.">
+  <meta name="twitter:image" content="Assets/Avatar.jpeg">
 
-  <!-- Custom Styles -->
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Stephnie Ugochukwu",
+    "url": "https://yourusername.github.io/your-portfolio/",
+    "image": "https://yourusername.github.io/your-portfolio/Assets/Avatar.jpeg",
+    "sameAs": [
+      "https://github.com/superstephgreat",
+      "https://x.com/thetechsteph",
+      "https://www.instagram.com/thetechsteph"
+    ],
+    "jobTitle": "Frontend Web Developer",
+    "description": "Frontend web developer building clean, responsive, and user-friendly websites using HTML, CSS, JavaScript, and React.",
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "React", "Git"]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts + Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  
-  <!--Header Section-->
-  
+  <!-- Header Section -->
   <header>
-  
-  <div class="wrapper">
+    <div class="wrapper">
       <div class="logo">Steph.</div>
-  <button id="theme-toggle"></button>
-  </div>
-      <button id="hamburger">&#9776;</button>
-  <nav class="navbar" id="navbar">
-  
+      <button id="theme-toggle" aria-label="Toggle theme"></button>
+    </div>
+    <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
+    <nav class="navbar" id="navbar">
       <a href="#hero">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-  
-  </nav>  
-
-
+    </nav>
   </header>
-  
-    <div id = "overlay"></div>
-    
 
-    
-    <!--Sections-->
-    
-    <!-- Hero Section-->
-    
-    <section id="hero">
-      
-      <div class="hero-content">
-        <div class="content">
-          <div class="text">
-          <h1 class="animate fade-up delay-1">Hi, I'm Stephnie </h1>
-        <h3 class="animate fade-in delay-2">A Frontend Web Developer</h3>
-        <p class="animate fade-up delay-3">I build clean, responsive, and user-friendly websites</p>
+  <div id="overlay"></div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="content">
+        <div class="text">
+          <h1 class="animate fade-up delay-1">Hi, I'm Stephnie</h1>
+          <h2 class="animate fade-in delay-2">Frontend Web Developer</h2>
+          <p class="animate fade-up delay-3">I build clean, responsive, and user-friendly websites.</p>
         </div>
         <div class="image">
-          <img src="Assets/Avatar.jpeg" alt="My Avatar"class="avatar"/>
+          <img src="Assets/myavatar.png" alt="Stephnie Ugochukwu Avatar" class="avatar">
         </div>
-        </div>
-        <div class="ctabtns">
+      </div>
+      <div class="ctabtns">
         <a href="#projects" class="cta">View my Work</a>
         <a href="#contact" class="cta">Contact Me</a>
-        </div>
-        <div class="social-links">
-          <a href="https://github.com/superstephgreat" aria-label="github" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-          <a href="https://x.com/thetechsteph?t=wlLJUNlnzfDTEgtShgoMtg&s=09" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
-           <a href="mailto:superstephdev@gmail.com" target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-envelope"></i>
-  </a>
-  <a href="https://www.instagram.com/thetechsteph?igsh=MTNxaXduZGU0aGxwMQ==" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-instagram"></i>
-  </a>
-        </div>
       </div>
-    </section>
-    
-    <!--About Me-->
-    
-    <section id="about">
-      <div class="about-me">
-        <img class="profile-pic" src="Assets/Avatar.jpeg" alt="A pic of me" />
-       <h2>About Me</h2>
-       <p>Hi, I’m Stephnie Ugochukwu—a 15-year-old frontend developer and aspiring Software Developer. I love building clean, responsive interfaces and I'm passionate about creating beautiful user experiences.
-      </p>
-       <a href="" class="download-cv" download>Download CV</a>
-      </div>  
-    </section>
-    
-    <!--My Skills-->
-    
-    <section id="skills">
-  <h2>My Skills</h2>
-  <div class="skills">
-  <div class="skill">
-    <i class="fa-brands fa-html5"></i>
-    <p>HTML</p>
-    <div class="meter">
-      <div class="meter-fill" data-percent="99.5"></div>
+      <div class="social-links">
+        <a href="https://github.com/superstephgreat" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/thetechsteph" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="mailto:superstephdev@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/thetechsteph" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="skill">
-    <i class="fa-brands fa-css3-alt"></i>
-    <p>CSS</p>
-    <div class="meter">
-      <div class="meter-fill" data-percent="95"></div>
-    </div>
-  </div>
+  <!-- About Section -->
+  <section id="about">
+    <article class="about-me">
+      <img class="profile-pic" src="Assets/myavatar.png" alt="Stephnie Ugochukwu's Avatar" />
+      <h2>About Me</h2>
+      <p>Hi, I’m Stephnie Ugochukwu — a front-end developer passionate about building clean, user-friendly web experiences. With 3+ years of coding, I enjoy turning ideas into reality. Beyond coding, I love reading and exploring new technologies as I grow toward full-stack development.</p>
+    </article>
+    <a href="#projects" class="about-cta">View my Work</a>
+  </section>
 
-  <div class="skill">
-    <i class="fa-brands fa-square-js"></i>
-    <p>JavaScript</p>
-    <div class="meter">
-      <div class="meter-fill" data-percent="80"></div>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <i class="fa-brands fa-html5"></i>
+        <p>HTML</p>
+        <div class="meter"><div class="meter-fill" data-percent="99.5"></div></div>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-css3-alt"></i>
+        <p>CSS</p>
+        <div class="meter"><div class="meter-fill" data-percent="95"></div></div>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-square-js"></i>
+        <p>JavaScript</p>
+        <div class="meter"><div class="meter-fill" data-percent="80"></div></div>
+      </div>
+      <div class="skill">
+        <i class="fab fa-react"></i>
+        <p>React</p>
+        <div class="meter"><div class="meter-fill" data-percent="70"></div></div>
+      </div>
+      <div class="skill">
+        <i class="fab fa-git-alt"></i>
+        <p>Git</p>
+        <div class="meter"><div class="meter-fill" data-percent="90"></div></div>
+      </div>
     </div>
-  </div>
-  </div>
-</section>
-    
-    <!--My Projects-->
-    
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="my-projects">
-        <div class="project animate scale-up" style="animation-delay: 0.1s;">
-          <img src="Assets/digital-clock.png" alt="App screenshot" />
-          <h3>Digital Clock</h3>
-          <p>A social media app</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="my-projects">
+      <article class="project animate scale-up">
+        <img src="Assets/clockntime.jpg" alt="Digital Clock App Screenshot">
+        <div class="project-content">
+          <h3>ClocknTime</h3>
+          <p>A digital clock with a built-in timer.</p>
           <div class="technologies">
-            
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-square-js"></i>
           </div>
-           <div class="project-links">
-            <a href="">Live demo</a>
-            <a href="">Source Code</a>
+          <div class="project-links">
+            <a href="#">Live demo</a>
+            <a href="#">Source Code</a>
           </div>
-          </div>
-          
-      <div class="project animate scale-up" style="animation-delay: 0.1s;">
-          <img src="Assets/todolist.png" alt="App screenshot" />
-          <h3>To-Do-List App</h3>
-          <p>App to find artisans</p>
+        </div>
+      </article>
+
+      <article class="project animate scale-up">
+        <img src="Assets/todolist.jpg" alt="To-Do List App Screenshot">
+        <div class="project-content">
+          <h3>To-Do List App</h3>
+          <p>A simple task manager to add, delete, and organize daily tasks.</p>
           <div class="technologies">
-            
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-square-js"></i>
           </div>
-           <div class="project-links">
-            <a href="">Live demo</a>
-            <a href="">Source Code</a>
+          <div class="project-links">
+            <a href="#">Live demo</a>
+            <a href="#">Source Code</a>
           </div>
-          </div>
-          
-      <div class="project animate scale-up" style="animation-delay: 0.1s;">
-          <img src="Assets/myportfolio.png" alt="App screenshot" />
+        </div>
+      </article>
+
+      <article class="project animate scale-up">
+        <img src="Assets/myportfolio.jpg" alt="Portfolio Website Screenshot">
+        <div class="project-content">
           <h3>My Portfolio</h3>
-          <p>My Personal Website</p>  
+          <p>My personal site showcasing my skills and projects.</p>
           <div class="technologies">
-            
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-square-js"></i>
           </div>
-           <div class="project-links">
-            <a href="">Live demo</a>
-            <a href="">Source Code</a>
+          <div class="project-links">
+            <a href="#">Live demo</a>
+            <a href="#">Source Code</a>
           </div>
-          </div>
-         
         </div>
-      </div>
-    </section>
-    
-    <!--Contact Me-->
-    
-    <section id="contact">
-      <div class="left-column" >
-        <div class="contact-info">
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="left-column">
+      <div class="contact-info">
         <h2>Contact Me</h2>
-<p>If you have any questions or want to work with me, feel free to reach out!</p>
+        <p>If you have any questions or want to work with me, feel free to reach out!</p>
       </div>
-       <div class="social-links">
-  <a href="https://github.com/superstephgreat" aria-label="github" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-  <a href="https://x.com/thetechsteph?t=wlLJUNlnzfDTEgtShgoMtg&s=09" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
-  <a href="mailto:superstephdev@gmail.com" target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-envelope"></i>
-  </a>
-  <a href="https://www.instagram.com/thetechsteph?igsh=MTNxaXduZGU0aGxwMQ==" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-instagram"></i>
-  </a>
-</div>
+      <div class="social-links">
+        <a href="https://github.com/superstephgreat" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/thetechsteph" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="mailto:superstephdev@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/thetechsteph" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
-     <div class="contact-form">
-        <form action="https://formspree.io/f/mwpqwvgo" method="post">
-   <div class="form-group">
-     <label for="name">Name:</label>
-     <input type="text" name="name" id="name" placeholder="Full Name" required />
-   </div>
-   <div class="form-group">
-     <label for="email" required>Email:</label>
-     <input type="text" name="email" id="email" placeholder="Email Address" />
-   </div>
-   <div class="message-group">
-     <label for="message">Your Message:</label>
-     <textarea name="message" id=message rows="5" required></textarea>
-   </div>
-   <button type="submit">Send Message</button>
-   
- </form>
-     </div>
-     
-    
-    
-      </section>
-      
-      <footer>
-        
-        <p> &copy; 2025 Stephnie Ugochukwu</p>
+    </div>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/mwpqwvgo" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Full Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Email Address" required />
+        </div>
+        <div class="message-group">
+          <label for="message">Your Message:</label>
+          <textarea name="message" id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-      </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Stephnie Ugochukwu</p>
+  </footer>
 
-    
-  
-  
-  
-  
-  
-  
-  
+  <!-- Scripts -->
   <script src="main.js"></script>
 </body>
 </html>
