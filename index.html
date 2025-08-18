@@ -7,31 +7,44 @@
 
   <!-- Primary Meta -->
   <title>Stephnie Ugochukwu | Frontend Web Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Stephnie Ugochukwu, a 15-year-old frontend developer building clean, responsive, and user-friendly websites using HTML, CSS, JavaScript, and React.">
-  <meta name="keywords" content="Frontend Developer, Web Developer, HTML, CSS, JavaScript, React, Portfolio, Nigeria, Junior Developer">
+  <meta name="description" content="Portfolio of Stephnie Ugochukwu, a frontend developer building clean, responsive, and user-friendly websites with HTML, CSS, JavaScript, and React.">
   <meta name="author" content="Stephnie Ugochukwu">
 
   <!-- Open Graph (Social Media Preview) -->
   <meta property="og:title" content="Stephnie Ugochukwu | Frontend Web Developer">
   <meta property="og:description" content="Explore my projects, skills, and passion for building user-friendly websites.">
-  <meta property="og:image" content="Assets/Avatar.jpeg">
+  <meta property="og:image" content="https://portfolio-steph.pxxl.click/Assets/myavatar.png">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourusername.github.io/your-portfolio/">
+  <meta property="og:url" content="https://portfolio-steph.pxxl.click">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Stephnie Ugochukwu | Frontend Web Developer">
   <meta name="twitter:description" content="Frontend developer portfolio with projects in HTML, CSS, JavaScript, and React.">
-  <meta name="twitter:image" content="Assets/Avatar.jpeg">
+  <meta name="twitter:image" content="https://portfolio-steph.pxxl.click/Assets/myavatar.png">
 
-  <!-- Structured Data -->
+  <!-- Favicon -->
+  <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts + Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Sitemap & Robots -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  <meta name="robots" content="index, follow">
+
+  <!-- Structured Data (Person) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Stephnie Ugochukwu",
-    "url": "https://yourusername.github.io/your-portfolio/",
-    "image": "https://yourusername.github.io/your-portfolio/Assets/Avatar.jpeg",
+    "url": "https://portfolio-steph.pxxl.click",
+    "image": "https://portfolio-steph.pxxl.click/Assets/myavatar.png",
     "sameAs": [
       "https://github.com/superstephgreat",
       "https://x.com/thetechsteph",
@@ -43,15 +56,39 @@
   }
   </script>
 
-  <!-- Favicon -->
-  <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
-
-  <!-- Fonts + Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Structured Data (Portfolio Projects) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "CreativeWork",
+        "position": 1,
+        "name": "ClocknTime",
+        "url": "https://clockntime.pxxl.click",
+        "description": "A digital clock with a built-in timer.",
+        "image": "https://portfolio-steph.pxxl.click/Assets/clockntime.jpg"
+      },
+      {
+        "@type": "CreativeWork",
+        "position": 2,
+        "name": "To-Do List Website",
+        "url": "https://personal-todo-list-website.stephnie.pxxl.click",
+        "description": "A simple task manager to add, delete, and organize daily tasks.",
+        "image": "https://portfolio-steph.pxxl.click/Assets/todolist.jpg"
+      },
+      {
+        "@type": "CreativeWork",
+        "position": 3,
+        "name": "My Portfolio",
+        "url": "https://portfolio-steph.pxxl.click",
+        "description": "My personal site showcasing my skills and projects.",
+        "image": "https://portfolio-steph.pxxl.click/Assets/myportfolio.jpg"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Header Section -->
@@ -77,12 +114,12 @@
     <div class="hero-content">
       <div class="content">
         <div class="text">
-          <h1 class="animate fade-up delay-1">Hi, I'm Stephnie</h1>
-          <h2 class="animate fade-in delay-2">Frontend Web Developer</h2>
-          <p class="animate fade-up delay-3">I build clean, responsive, and user-friendly websites.</p>
+          <h1>Hi, I'm Stephnie</h1>
+          <h2>Frontend Web Developer</h2>
+          <p>I build clean, responsive, and user-friendly websites.</p>
         </div>
         <div class="image">
-          <img src="Assets/myavatar.png" alt="Stephnie Ugochukwu Avatar" class="avatar">
+          <img src="Assets/myavatar.png" alt="Stephnie Ugochukwu Avatar" class="avatar" loading="lazy">
         </div>
       </div>
       <div class="ctabtns">
@@ -92,7 +129,7 @@
       <div class="social-links">
         <a href="https://github.com/superstephgreat" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a href="https://x.com/thetechsteph" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="mailto:superstephdev@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:superstephdev@gmai.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         <a href="https://www.instagram.com/thetechsteph" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
@@ -101,7 +138,7 @@
   <!-- About Section -->
   <section id="about">
     <article class="about-me">
-      <img class="profile-pic" src="Assets/myavatar.png" alt="Stephnie Ugochukwu's Avatar" />
+      <img class="profile-pic" src="Assets/myavatar.png" alt="Stephnie Ugochukwu's Avatar" loading="lazy" />
       <h2>About Me</h2>
       <p>Hi, I’m Stephnie Ugochukwu — a front-end developer passionate about building clean, user-friendly web experiences. With 3+ years of coding, I enjoy turning ideas into reality. Beyond coding, I love reading and exploring new technologies as I grow toward full-stack development.</p>
     </article>
@@ -144,8 +181,8 @@
   <section id="projects">
     <h2>My Projects</h2>
     <div class="my-projects">
-      <article class="project animate scale-up">
-        <img src="Assets/clockntime.jpg" alt="Digital Clock App Screenshot">
+      <article class="project">
+        <img src="Assets/clockntime.jpg" alt="Digital Clock App Screenshot" loading="lazy">
         <div class="project-content">
           <h3>ClocknTime</h3>
           <p>A digital clock with a built-in timer.</p>
@@ -161,8 +198,8 @@
         </div>
       </article>
 
-      <article class="project animate scale-up">
-        <img src="Assets/todolist.jpg" alt="To-Do List App Screenshot">
+      <article class="project">
+        <img src="Assets/todolist.jpg" alt="To-Do List App Screenshot" loading="lazy">
         <div class="project-content">
           <h3>To-Do List Website</h3>
           <p>A simple task manager to add, delete, and organize daily tasks.</p>
@@ -172,14 +209,14 @@
             <i class="fa-brands fa-square-js"></i>
           </div>
           <div class="project-links">
-            <a href="https://personal-todo-list-website.pxxl.click">Live demo</a>
+            <a href="https://personal-todo-list-website.pxxl.click" rel="noopener noreferrer">Live demo</a>
             <a href="https://github.com/superstephgreat/Personal-ToDo-List-Website" rel="noopener noreferrer">Source Code</a>
           </div>
         </div>
       </article>
 
-      <article class="project animate scale-up">
-        <img src="Assets/myportfolio.jpg" alt="Portfolio Website Screenshot">
+      <article class="project">
+        <img src="Assets/myportfolio.jpg" alt="Portfolio Website Screenshot" loading="lazy">
         <div class="project-content">
           <h3>My Portfolio</h3>
           <p>My personal site showcasing my skills and projects.</p>
@@ -189,8 +226,8 @@
             <i class="fa-brands fa-square-js"></i>
           </div>
           <div class="project-links">
-            <a href="#">Live demo</a>
-            <a href="#">Source Code</a>
+            <a href="https://portfolio-steph.pxxl.click" rel="noopener noreferrer">Live demo</a>
+            <a href="https://github.com/superstephgreat/My-Portfolio-Stephnie-Ugochukwu" rel="noopener noreferrer">Source Code</a>
           </div>
         </div>
       </article>
@@ -198,7 +235,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+<section id="contact">
     <div class="left-column">
       <div class="contact-info">
         <h2>Contact Me</h2>
@@ -236,6 +273,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>

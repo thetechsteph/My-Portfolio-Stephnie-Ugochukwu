@@ -341,7 +341,7 @@ h3 {
     width: 60%;
     box-shadow: var(--skill-shadow);
     border-radius: 1rem;
-    color: white;
+    color: var(--text-color);
 }
 
 .skill i{
@@ -349,6 +349,9 @@ h3 {
     color: var(--skill-i
     );
 }
+
+
+
 
 .meter{
     width: 100%;
