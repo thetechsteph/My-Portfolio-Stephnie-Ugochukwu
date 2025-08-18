@@ -614,7 +614,9 @@ footer{
     .content h1{ font-size: 3rem;}
     .content h2{ font-size: 2rem;}
     .content p{ font-size: 1.2rem;}
-    
+    #hero{
+        margin-top: 5rem;
+    }
 
     .skill{
     padding: 2rem;
@@ -676,7 +678,11 @@ footer{
     text-align: left;
     align-items: flex-start;
     gap: 2rem;
-    margin-top: 2rem;
+    padding: 0;
+    margin: 20rem 1rem 1rem 1rem;
+  }
+  section{
+      margin-bottom: 20rem;
   }
   .contact-info,
   .contact-form {
@@ -698,7 +704,11 @@ footer{
  a{ 
      font-size: 1.5rem;
     
- }
+}
+#hero i{
+    margin-top: 3rem;
+}
+
 
 }
 
