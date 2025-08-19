@@ -84,7 +84,8 @@ body.no-scroll{
     overflow: hidden;
 }
 
-button{
+a, button{
+    font-size: 0.95rem;
     cursor: pointer;
 }
 
@@ -105,11 +106,11 @@ header {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    
+    justify-content: center;
 }
 
 #theme-toggle{
-    font-size: 1.5rem;
+    font-size: 2rem;
     background: none;
     border: none;
     z-index: 2001;
@@ -672,7 +673,7 @@ footer{
   .project{
       height: auto;
   }
-  
+ 
   #contact {
     flex-direction: row;
     text-align: left;
