@@ -551,6 +551,14 @@ footer{
     background: var(--footer-bg-gradient);
     width: 100%;
 }
+footer p{
+    font-size: 0.7rem;
+}
+
+.made-with{
+    font-size: 0.5rem;
+    padding: 0.3rem;
+}
 
 
 
