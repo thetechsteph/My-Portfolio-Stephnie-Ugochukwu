@@ -278,7 +278,7 @@ h3 {
 .social-links i{
     display: inline-block;
     color: var(--text-color);
-    margin: 2rem 1rem;
+    margin: 2rem 0.8rem;
     margin-bottom: 0;
     font-size: 1rem;
     padding: 0.5rem;
@@ -477,7 +477,7 @@ h3 {
 }
 
 #contact .social-links i{
-    margin: 2rem 1rem;
+    margin: 2rem 0.8rem;
 }
 
 
@@ -604,115 +604,95 @@ footer{
 .delay-2 { animation-delay: 0.2s; }
 .delay-3 { animation-delay: 0.4s; }
 @media (min-width: 768px) {
-    
-    .content {
-        flex-direction: row;
-        text-align: left;
-        gap: 2rem;
-        margin: 1rem;
-        align-items: center;
-    }
-    .content h1{ font-size: 3rem;}
-    .content h2{ font-size: 2rem;}
-    .content p{ font-size: 1.2rem;}
-    #hero{
-        margin-top: 5rem;
-    }
+  .content {
+    flex-direction: row;
+    text-align: left;
+    gap: 2rem;
+    margin: 1rem 2rem;
+    align-items: center;
+  }
 
-    .skill{
-    padding: 2rem;
-    margin: 2rem;
-    width: 30%;
+  .content h1 { font-size: 2.4rem; }
+  .content h2 { font-size: 1.8rem; }
+  .content p  { font-size: 1.05rem; }
+
+  #hero {
+    margin-top: 5rem;
+  }
+  #about .profile-pic{
+      width: 25%;
+  }
+
+  .skill {
+    padding: 1.5rem;
+    margin: 1.5rem;
+    width: 32%;
     box-shadow: var(--skill-shadow);
     border-radius: 1rem;
     color: white;
-}
-    .text {
-        padding-right: 2rem;
-    }
-    .image{
-        margin-right: auto;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .image img {
-        max-width: 70%;
-        height: auto;
-    }
-    .avatar {
-        max-width: 70%;
-        height: auto;
-    }
+  }
+
+  .text { padding-right: 2rem; }
+
+  .image {
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .image img,
+  .avatar {
+    max-width: 70%;
+    height: auto;
+  }
+
   .navbar {
-    position: static;   
+    position: static;
     display: flex !important;
     flex-direction: row;
     height: auto;
     width: auto;
-    gap: 2rem;
+    gap: 1.5rem;
     box-shadow: none;
     padding: 0;
     background: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
-  
-  .logo{
-      font-size: 3rem;
-  }
-    #hamburger{
-    display: none;
-  }
-  
-  .projects{
-      margin-top: 3rem;
-  }
-  
-  .project img{
-      height: 10rem;
-  }
-  .project{
-      height: auto;
-  }
- 
+
+  .logo { font-size: 2rem; }
+
+  #hamburger { display: none; }
+
+  .projects { margin-top: 3rem; }
+
+  .project img { height: 9rem; }
+  .project { height: auto; }
+
   #contact {
     flex-direction: row;
     text-align: left;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
     padding: 0;
-    margin: 20rem 1rem 1rem 1rem;
+    margin: 10rem 1rem 3rem 3rem;
   }
-  section{
-      margin-bottom: 20rem;
-  }
-  .contact-info,
-  .contact-form {
-    flex: 1;
-}
-#contact > div {
-    flex: 1;
-  }
-  h1 { font-size: 4rem; }
-  h2 { font-size: 3rem; }
-    p { font-size: 1.3rem; }
-  .skill i { font-size: 4rem; }
-  .project h3 { font-size: 1.5rem; }
-  .project p { font-size: 1.2rem; }
-  input, textarea, button{ font-size: 1.3rem; }
-  form{
-      font-size: 1.3rem;
-  }
- a{ 
-     font-size: 1.5rem;
-    
-}
-#hero i{
-    margin-top: 3rem;
-}
 
+  section { margin-bottom: 10rem; }
 
+  h1 { font-size: 2.8rem; }
+  h2 { font-size: 2rem; }
+  p  { font-size: 1rem; }
+  .skill i     { font-size: 2.5rem; }
+  .project h3  { font-size: 1.2rem; }
+  .project p   { font-size: 1rem; }
+  input,
+  textarea,
+  button,
+  form         { font-size: 1rem; }
+  a            { font-size: 1rem; }
+
+  #hero i { margin-top: 3rem; }
 }
-
 
 #overlay{
   position: fixed;
