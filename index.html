@@ -32,8 +32,6 @@
   <meta name="twitter:image" content="https://thetechsteph.netlify.app/Assets/myavatar.png">
   <meta name="twitter:creator" content="@thetechsteph">
 
-  <!-- Favicon -->
-  <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
 
   <!-- Fonts + Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -51,8 +49,9 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://thetechsteph.netlify.app/#person",
     "name": "Stephanie Dominic",
-    "alternateName": "Stephnie Ugochukwu",
+    "alternateName": ["The Tech Steph", "thetechsteph", "Stephnie Ugochukwu"],
     "url": "https://thetechsteph.netlify.app",
     "image": "https://thetechsteph.netlify.app/Assets/myavatar.png",
     "sameAs": [
@@ -61,48 +60,61 @@
       "https://www.instagram.com/thetechsteph",
       "https://www.linkedin.com/in/stephanie-dominic-07415025b",
       "https://www.facebook.com/profile.php?id=61580121932117",
-      "https://www.tiktok.com/@thetechsteph"
+      "https://www.tiktok.com/@thetechsteph",
       "https://thetechsteph.hashnode.dev"
     ],
     "jobTitle": "Frontend Web Developer",
     "description": "Frontend web developer building clean, responsive, and user-friendly websites using HTML, CSS, JavaScript, and React.",
-    "knowsAbout": ["HTML", "CSS", "JavaScript", "React", "Git"]
+   "knowsAbout": [
+  "Frontend Development",
+  "Responsive Design",
+  "UI/UX Principles",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Git",
+  "Web Accessibility"
+]
   }
   </script>
 
   <!-- Structured Data (Portfolio Projects) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "CreativeWork",
-        "position": 1,
-        "name": "ClocknTime",
-        "url": "https://clockntime.netlify.app",
-        "description": "A digital clock with a built-in timer.",
-        "image": "https://thetechsteph.netlify.app/Assets/clockntime.jpg"
-      },
-      {
-        "@type": "CreativeWork",
-        "position": 2,
-        "name": "To-Do List Website",
-        "url": "https://personal-todo-list-website.netlify.app",
-        "description": "A simple task manager to add, delete, and organize daily tasks.",
-        "image": "https://thetechsteph.netlify.app/Assets/todolist.jpg"
-      },
-      {
-        "@type": "CreativeWork",
-        "position": 3,
-        "name": "My Portfolio",
-        "url": "https://thetechsteph.netlify.app",
-        "description": "My personal site showcasing my skills and projects.",
-        "image": "https://thetechsteph.netlify.app/Assets/myportfolio.jpg"
-      }
-    ]
-  }
-  </script>
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "CreativeWork",
+      "position": 1,
+      "name": "ClocknTime",
+      "url": "https://clockntime.netlify.app",
+      "description": "A digital clock with a built-in timer.",
+      "image": "https://thetechsteph.netlify.app/Assets/clockntime.jpg",
+      "author": { "@id": "https://thetechsteph.netlify.app/#person" }
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 2,
+      "name": "To-Do List Website",
+      "url": "https://personal-todo-list-website.netlify.app",
+      "description": "A simple task manager to add, delete, and organize daily tasks.",
+      "image": "https://thetechsteph.netlify.app/Assets/todolist.jpg",
+      "author": { "@id": "https://thetechsteph.netlify.app/#person" }
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 3,
+      "name": "My Portfolio",
+      "url": "https://thetechsteph.netlify.app",
+      "description": "My personal site showcasing my skills and projects.",
+      "image": "https://thetechsteph.netlify.app/Assets/myportfolio.jpg",
+      "author": { "@id": "https://thetechsteph.netlify.app/#person" }
+    }
+  ]
+}
+</script>
   <link rel="me" href="https://x.com/thetechsteph">
 <link rel="me" href="https://www.linkedin.com/in/stephanie-dominic-07415025b">
 <link rel="me" href="https://github.com/thetechsteph">
