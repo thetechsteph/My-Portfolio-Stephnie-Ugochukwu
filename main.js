@@ -5,6 +5,7 @@ const toggleBtn = document.getElementById('theme-toggle');
 const html = document.documentElement;
 
 
+
 menuToggle.addEventListener('click', () => {
   navBar.classList.toggle('active');
   overlay.classList.toggle('active');
@@ -134,3 +135,10 @@ form.addEventListener("submit", function (e) {
         form.reset();
     }, 1000); 
 });
+
+let year  = document.getElementById('year');
+
+year.textContent = new Date().getFullYear() 
+
+
+
