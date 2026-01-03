@@ -121,12 +121,10 @@ header {
 .logo {  
     font-size: 2rem;  
     font-family: 'Raleway'; 
-    letter-spacing: -3px;
      background: var(--logo-gradient);
+     letter-spacing: -3px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-
 }  
 
 #hamburger {  
@@ -667,7 +665,7 @@ footer p{
     font-size: 1rem;
   }
 
-  .logo { font-size: 2rem; }
+  .logo { font-size: 1rem; }
 
   #hamburger { display: none; }
 
